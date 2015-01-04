@@ -20,7 +20,7 @@ with open("pagetitle_journal.txt") as infile:
         
             year = re.search(r'(?<=year=)[^\|]+', line)
             if year:
-                try:
+                try: 
                     year= year.group(0).lstrip()[:4]
                 except:
                     year= ""
